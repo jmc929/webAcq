@@ -1,0 +1,881 @@
+/* Animación al hacer scroll */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+
+
+/* Texto sin decoraci�n */
+a {
+  text-decoration: none;
+}
+a:hover .snap1{
+  color: #a1a1a1ff; /* Color al pasar el mouse */
+}
+a:hover .snap2{
+  color: #007cc6ff;
+   /* Color al pasar el mouse */
+}
+
+/*
+  Note: These are temporary previews of the images. 
+  They're active for 10-15 days only. You should replace them with the actual images before using the code in production.
+*/
+:root {
+  --image-0: url(./graphics/fondo-wiplas.png);
+  --image-1: url(./graphics/graphics1.png);
+  --image-2: url(./graphics/fondo-wiplas2.png);
+  --image-3: url(./graphics/graphics3.png);
+  --custom-width: 100vw;
+  --design-width: 1200;
+  --ratio: calc(var(--custom-width) / var(--design-width));
+}
+
+/* Default classes */
+.pos-abs {
+  position: absolute;
+}
+.object-fit {
+  object-fit: cover;
+}
+.fill-parent {
+  width: 100%;
+  height: 100%;
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-auto {
+  background-size: auto;
+}
+.bg-crop {
+  background-size: 100% 100%;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.pos-init {
+  top: 0px;
+  left: 0px;
+}
+.image-div {
+  background-color: transparent;
+  background-position: center;
+}
+/* Default classes end */
+body {
+  margin: 0px 0px;
+  padding: 0px;
+}
+.parent-div {
+  position: relative;
+  width: var(--custom-width);
+  height: calc(2977 * var(--ratio));
+  overflow: hidden;
+  margin: auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.tuberia-wiplas-86303 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+  background: #ffffffff;
+}
+.nodeBg-303189 {
+  opacity: 1;
+}
+.logo-acquapack--303189 {
+  width: 23.02%;
+  height: 5.14%;
+  top: 0%;
+  left: 10.89%;
+  opacity: 1;
+  z-index: 3;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.inicio-303190 {
+  width: 5.42%;
+  height: 0.74%;
+  top: 1.88%;
+  left: 46.08%;
+  opacity: 1;
+  z-index: 4;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.inicio-303190-0 {
+  font-size: calc(21.5 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(22.5 * var(--ratio));
+  color: #007cc6ff;
+}
+
+.nosotros-303191 {
+  width: 13.42%;
+  height: 0.74%;
+  top: 1.88%;
+  left: 54.25%;
+  opacity: 1;
+  z-index: 5;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.nosotros-303191-0 {
+  font-size: calc(21.5 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(22.5 * var(--ratio));
+  color: #007ec7ff;
+}
+
+.catlogo-303192 {
+  width: 9.08%;
+  height: 0.74%;
+  top: 1.88%;
+  left: 65%;
+  opacity: 1;
+  z-index: 6;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.catlogo-303192-0 {
+  font-size: calc(21.5 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(22.5 * var(--ratio));
+  color: #007bc5ff;
+}
+
+.servicios-303193 {
+  width: 9%;
+  height: 0.97%;
+  top: 1.88%;
+  left: 76.25%;
+  opacity: 1;
+  z-index: 7;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.servicios-303193-0 {
+  font-size: calc(21.5 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(22.5 * var(--ratio));
+  color: #0080c9ff;
+}
+
+.contacto-303194 {
+  width: 8.08%;
+  height: 0.74%;
+  top: 1.88%;
+  left: 87.33%;
+  opacity: 1;
+  z-index: 8;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.contacto-303194-0 {
+  font-size: calc(21.5 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 800;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(22.5 * var(--ratio));
+  color: #0083cbff;
+}
+
+.blobscenehaikei-450222 {
+  width: 100%;
+  height: 82.9%;
+  top: 4.97%;
+  left: -0.42%;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.group-450226 {
+  width: 49.91%;
+  height: 56.93%;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.nodeBg-450227 {
+  opacity: 1;
+  background-image: var(--image-0);
+}
+.vector-450227 {
+  width: 99.17%;
+  height: 100%;
+  top: 0%;
+  left: 0.83%;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450223 {
+  opacity: 1;
+  background-image: var(--image-1);
+}
+.vector-450223 {
+  width: 99.58%;
+  height: 100%;
+  top: 0%;
+  left: 0.42%;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.group-450224 {
+  width: 49.91%;
+  height: 56.96%;
+  top: 43.04%;
+  left: 50.09%;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+.nodeBg-450225 {
+  opacity: 1;
+  background-image: var(--image-2);
+}
+.vector-450225 {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450194 {
+  opacity: 1;
+}
+.page24-1-450194 {
+  width: 72.66%;
+  height: 41.44%;
+  top: 4.97%;
+  left: 13.67%;
+  opacity: 1;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.line-22-303195 {
+  width: 100%;
+  height: 0%;
+  top: 4.98%;
+  left: 0%;
+  opacity: 1;
+  z-index: 9;
+  transform: rotate(0deg);
+  box-shadow:
+    inset 0 0 0 1px #8d8b8bff,
+    inset 0 0 1px 0 #8d8b8bff,
+    inset 0 1px 0 0 #8d8b8bff,
+    inset 1px 0 0 0 #8d8b8bff;
+  border-left: 1px solid #8d8b8bff;
+  border-right: 1px solid #8d8b8bff;
+  border-top: 1px solid #8d8b8bff;
+  border-bottom: 1px solid #8d8b8bff;
+}
+.nodeBg-450195 {
+  opacity: 1;
+}
+.page25-1-450195 {
+  width: 72.66%;
+  height: 41.44%;
+  top: 46.42%;
+  left: 13.67%;
+  opacity: 1;
+  z-index: 2;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450198 {
+  opacity: 1;
+  background-image: var(--image-3);
+}
+.rectangle-40-450198 {
+  width: 100%;
+  height: 12.13%;
+  top: 87.87%;
+  left: 0%;
+  opacity: 1;
+  z-index: 12;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.direccin-450212 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.92%;
+  left: 52.76%;
+  opacity: 1;
+  z-index: 26;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.direccin-450212-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+
+.direccin-450196 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.92%;
+  left: 52.84%;
+  opacity: 1;
+  z-index: 10;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.direccin-450196-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+
+.redes-450213 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.92%;
+  left: 78.18%;
+  opacity: 1;
+  z-index: 27;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.redes-450213-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+
+.redes-450197 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.92%;
+  left: 78.26%;
+  opacity: 1;
+  z-index: 11;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.redes-450197-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+
+.links-450210 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.96%;
+  left: 1.35%;
+  opacity: 1;
+  z-index: 24;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.links-450210-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+
+.contacto-450211 {
+  width: 13.85%;
+  height: 1.41%;
+  top: 88.96%;
+  left: 20.73%;
+  opacity: 1;
+  z-index: 25;
+  transform: rotate(0deg);
+  text-align: center;
+  line-height: 0px;
+}
+.contacto-450211-0 {
+  font-size: calc(24 * var(--ratio));
+  font-family: Roboto Flex;
+  font-weight: 700;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(25 * var(--ratio));
+  color: #ffffffff;
+}
+.nodeBg-450214 {
+  width: calc(61.28261094526 * var(--ratio));
+  height: calc(63.941808016755864 * var(--ratio));
+  left: calc(-0.7663043497788715 * var(--ratio));
+  top: calc(0 * var(--ratio));
+
+  opacity: 1;
+}
+.instagram-gris--450214 {
+  width: 4.9%;
+  height: 2.08%;
+  top: 89.74%;
+  left: 88.85%;
+  opacity: 1;
+  z-index: 28;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450219 {
+  width: calc(217.95402179940527 * var(--ratio));
+  height: calc(217.95401234118768 * var(--ratio));
+  left: calc(-15.186781590615707 * var(--ratio));
+  top: calc(-108.47700617059384 * var(--ratio));
+
+  opacity: 1;
+}
+.linea-46-450219 {
+  width: 15.73%;
+  height: 0.06%;
+  top: 90.08%;
+  left: 23.28%;
+  opacity: 1;
+  z-index: 33;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450220 {
+  width: calc(302.7241362773186 * var(--ratio));
+  height: calc(302.72412154457515 * var(--ratio));
+  left: calc(-21.120689629333103 * var(--ratio));
+  top: calc(-150.86206077228758 * var(--ratio));
+
+  opacity: 1;
+}
+.linea-47-450220 {
+  width: 21.88%;
+  height: 0.08%;
+  top: 90.09%;
+  left: 55.21%;
+  opacity: 1;
+  z-index: 34;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450221 {
+  width: calc(217.95402179940527 * var(--ratio));
+  height: calc(217.95401234118768 * var(--ratio));
+  left: calc(-15.186781590615707 * var(--ratio));
+  top: calc(-108.47700617059384 * var(--ratio));
+
+  opacity: 1;
+}
+.linea-48-450221 {
+  width: 15.73%;
+  height: 0.06%;
+  top: 90.1%;
+  left: 81.51%;
+  opacity: 1;
+  z-index: 35;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450218 {
+  width: calc(217.95402179940527 * var(--ratio));
+  height: calc(217.95401234118768 * var(--ratio));
+  left: calc(-15.186781590615707 * var(--ratio));
+  top: calc(-108.47700617059384 * var(--ratio));
+
+  opacity: 1;
+}
+.linea-45-450218 {
+  width: 15.73%;
+  height: 0.06%;
+  top: 90.12%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 32;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.barrio-perpetuo-450203 {
+  width: 18.91%;
+  height: 5.14%;
+  top: 90.33%;
+  left: 55.21%;
+  opacity: 1;
+  z-index: 17;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.barrio-perpetuo-450203-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.instagram-450204 {
+  width: 8.28%;
+  height: 0.9%;
+  top: 90.33%;
+  left: 81.51%;
+  opacity: 1;
+  z-index: 18;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.instagram-450204-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.inicio-450200 {
+  width: 5.36%;
+  height: 0.9%;
+  top: 90.37%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 14;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.inicio-450200-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.cel-0000000-450201 {
+  width: 14.11%;
+  height: 0.9%;
+  top: 90.37%;
+  left: 23.28%;
+  opacity: 1;
+  z-index: 15;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.cel-0000000-450201-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+.nodeBg-450216 {
+  opacity: 1;
+}
+.maps-12-450216 {
+  width: 4.06%;
+  height: 1.81%;
+  top: 90.58%;
+  left: 74.11%;
+  opacity: 1;
+  z-index: 30;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.nodeBg-450215 {
+  opacity: 1;
+}
+.whatsap-gris-12-450215 {
+  width: 6.82%;
+  height: 2.29%;
+  top: 91%;
+  left: 87.86%;
+  opacity: 1;
+  z-index: 29;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.email-acquapack-450202 {
+  width: 29.22%;
+  height: 1.68%;
+  top: 91.27%;
+  left: 23.28%;
+  opacity: 1;
+  z-index: 16;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.email-acquapack-450202-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.whatsapp-450206 {
+  width: 13.44%;
+  height: 0.9%;
+  top: 91.71%;
+  left: 81.51%;
+  opacity: 1;
+  z-index: 20;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.whatsapp-450206-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.quienes-somos-450205 {
+  width: 13.44%;
+  height: 0.9%;
+  top: 91.75%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 19;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.quienes-somos-450205-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.catalogo-450207 {
+  width: 9.06%;
+  height: 0.92%;
+  top: 93.12%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 21;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.catalogo-450207-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+.nodeBg-450199 {
+  opacity: 1;
+}
+.logo-acquapack--450199 {
+  width: 19.11%;
+  height: 4.37%;
+  top: 93.29%;
+  left: 41.67%;
+  opacity: 1;
+  z-index: 13;
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.servicios-450208 {
+  width: 9.06%;
+  height: 1.2%;
+  top: 94.48%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 22;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.servicios-450208-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.contacto-450209 {
+  width: 8.07%;
+  height: 0.92%;
+  top: 95.91%;
+  left: 5.73%;
+  opacity: 1;
+  z-index: 23;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.contacto-450209-0 {
+  font-size: calc(19 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(20 * var(--ratio));
+  color: #a1a1a1ff;
+}
+
+.c-2024-acquapack--450217 {
+  width: 30.57%;
+  height: 0.94%;
+  top: 98.32%;
+  left: 35.1%;
+  opacity: 1;
+  z-index: 31;
+  transform: rotate(0deg);
+  text-align: left;
+  line-height: 0px;
+}
+.c-2024-acquapack--450217-0 {
+  font-size: calc(14 * var(--ratio));
+  font-family: Roboto;
+  font-weight: 500;
+
+  text-decoration: none;
+  text-transform: none;
+
+  line-height: calc(15 * var(--ratio));
+  color: #ffffffff;
+}
