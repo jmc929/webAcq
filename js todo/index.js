@@ -1,6 +1,5 @@
 const images = [
   'images/tractor y mangueras galeria.jpeg',
-  'images/riegos  galeria.jpg',
   'images/panel galeria.jpg',
   'images/Manguera y campo galeria.jpeg',
   'images/IMPERMEABILIZACION DE TANQUE 3 galeria.jpeg'
